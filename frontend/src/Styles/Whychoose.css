@@ -1,0 +1,206 @@
+.why-choose-us {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(40px);
+  padding: 60px;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+}
+.whychoose-card {
+  opacity: 0.8;
+}
+.why-choose-us::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(270deg, rgba(142, 101, 207, 1), #ffffff00);
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.whychoose-circle1 {
+  top: -100px;
+  left: 220px;
+  width: 400px;
+  height: 300px;
+  background: #abd9d9;
+  opacity: 0.8;
+  filter: blur(80px);
+}
+.whychoose-circle2 {
+  top: 40px;
+  right: -80px;
+  width: 220px;
+  height: 350px;
+  background: #8d8dda;
+  animation-delay: 5s;
+  opacity: 0.8;
+  filter: blur(70px);
+}
+.whychoose-circle3 {
+  bottom: -100px;
+  left: 25px;
+  width: 400px;
+  height: 200px;
+  filter: blur(70px);
+  opacity: 0.8;
+}
+.why-choose-us .whychoose-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.why-choose-us .whychoose-content .heading {
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.why-choose-us .whychoose-content .sub-heading {
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  color: #ffffff;
+}
+
+.line-style {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 250px;
+  height: 70px;
+  transform: rotate(1deg);
+  background: linear-gradient(90deg, #8d8dda, #abd9d9);
+  opacity: 0.8;
+  border-radius: 50px;
+}
+.whychoose-content .para-content {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+  color: #ffffff;
+}
+.whychoose-content .para-content span {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+  .why-choose-us {
+    padding: 40px;
+  }
+  .why-choose-us .whychoose-content .heading {
+    font-size: 40px;
+  }
+  .why-choose-us .whychoose-content .sub-heading {
+    font-size: 25px;
+  }
+  .line-style {
+    left: 52%;
+    z-index: -1;
+    width: 200px;
+    height: 50px;
+  }
+  .why-choose-us .whychoose-content .para-content {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 700px) {
+  .why-choose-us {
+    padding: 30px;
+  }
+  .why-choose-us .whychoose-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+ .why-choose-us .whychoose-content .heading {
+    font-size: 30px;
+  }
+  .why-choose-us .whychoose-content .sub-heading {
+    font-size: 20px;
+  }
+  .line-style {
+    left: 52%;
+    z-index: -1;
+    width: 180px;
+    height: 40px;
+  }
+  .why-choose-us .whychoose-content .para-content {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: .5px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 500px) {
+  .why-choose-us {
+    padding: 20px;
+  }
+  .why-choose-us .whychoose-content {
+    gap: 15px;
+  }
+ .why-choose-us .whychoose-content .heading {
+    font-size: 25px;
+  }
+  .why-choose-us .whychoose-content .sub-heading {
+    font-size: 18px;
+  }
+  .line-style {
+    left: 52%;
+    z-index: -1;
+    width: 160px;
+    height: 40px;
+  }
+  .why-choose-us .whychoose-content .para-content {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: .5px;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 430px) {
+  .why-choose-us {
+    padding: 20px;
+  }
+  .why-choose-us .whychoose-content {
+    gap: 12px;
+  }
+ .why-choose-us .whychoose-content .heading {
+    font-size: 20px;
+  }
+  .why-choose-us .whychoose-content .sub-heading {
+    font-size: 16px;
+  }
+  .line-style {
+    left: 52%;
+    z-index: -1;
+    width: 120px;
+    height: 30px;
+  }
+  .why-choose-us .whychoose-content .para-content {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: .5px;
+    color: #ffffff;
+  }
+}
+
