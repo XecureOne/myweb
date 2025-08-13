@@ -11,7 +11,7 @@ import Endpointsecurity from "./Pages/Services/Endpointsecurity";
 import NextGenerationFirewall from "./Pages/Services/Next-Gen Firewall";
 import Emailsecurity from "./Pages/Services/Email Security Proactive";
 import MalwareAnalysis from "./Pages/Services/Malware Analysis";
-import CyberLegalSupport from "./Pages/Services/Cyberlegal Support";
+import CyberLegelSupport from "./Pages/Services/Cyberlegal Support";
 import CyberSecurityTraining from "./Pages/Services/CyberSecurity Training";
 import SecureCodeReview from "./Pages/Services/Secure Code Review";
 import ThreatIntelligence from "./Pages/Services/Threat Intelligence";
@@ -50,7 +50,7 @@ function WebsiteRouter() {
           />
           <Route path="/EmailSecurity" element={<Emailsecurity />} />
           <Route path="/MalwareAnalysis" element={<MalwareAnalysis />} />
-          <Route path="/CyberLegalSupport" element={<CyberLegalSupport />} />
+          <Route path="/CyberLegelSupport" element={<CyberLegelSupport />} />
           <Route
             path="/CyberSecurityTraining"
             element={<CyberSecurityTraining />}
