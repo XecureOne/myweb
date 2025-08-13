@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Not Found</title>
+    <script>
+      // Get the path from the URL
+      const path = window.location.pathname;
+
+      // Check if the path is not the root
+      if (path !== '/') {
+        // Construct the full URL with the base path
+        // Change 'xecureone.com' to your domain if it's different
+        const redirectUrl = `https://xecureone.com${path}`;
+        
+        // Redirect to the correct path, allowing the router to handle it
+        window.location.replace(redirectUrl);
+      }
+    </script>
+  </head>
+  <body>
+    </body>
+</html>
