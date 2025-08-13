@@ -112,7 +112,7 @@ function AboutPage() {
                 className="let-connect-btn"
                 onClick={() => navigate("/contact")}
               >
-                Let`s Connect
+                Let's Connect
               </div>
               <div
                 className="our-service-btn"

@@ -77,7 +77,7 @@ const needs = [
 
 const steps = [
   {
-    title: "egal Risk Assessment ",
+    title: "Legal Risk Assessment ",
     description: `– Evaluate exposure to cyber regulations and contractual 
 liabilities.`,
   },

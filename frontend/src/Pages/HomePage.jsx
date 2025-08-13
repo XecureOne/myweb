@@ -979,7 +979,7 @@ function HomePage() {
 
           <div className="hp-sixth-section our-partner">
             <div className="title-tag blue-tag partner-tag">
-              <p>Our Partner.</p>
+              <p>Our Partner</p>
             </div>
             <div className="partner-box-container">
               <div className="partner-box-all scroll-animation">
