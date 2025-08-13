@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://xecureone.github.io/myweb",
+  "homepage": "https://xecureone.com",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
