@@ -4,6 +4,15 @@ import AppAdmin from "./Admin/AppAdmin";
 import { ToastContainer } from "react-toastify";
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath && redirectPath !== '/') {
+      sessionStorage.removeItem('redirectPath');
+      navigate(redirectPath, { replace: true });
+    }
+  }, [navigate]);
   return (
     <>
       <Routes>
