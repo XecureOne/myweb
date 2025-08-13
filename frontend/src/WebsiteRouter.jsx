@@ -50,7 +50,7 @@ function WebsiteRouter() {
           />
           <Route path="/EmailSecurity" element={<Emailsecurity />} />
           <Route path="/MalwareAnalysis" element={<MalwareAnalysis />} />
-          <Route path="/CyberLegelSupport" element={<CyberLegelSupport />} />
+          <Route path="/CyberLegalSupport" element={<CyberLegelSupport />} />
           <Route
             path="/CyberSecurityTraining"
             element={<CyberSecurityTraining />}
