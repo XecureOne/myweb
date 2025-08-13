@@ -296,7 +296,7 @@ const Header = () => {
                     className={`dropdown-content ${open === 1 ? "show" : ""}`}
                   >
                     <Link
-                      to="/CyberLegelSupport"
+                      to="/CyberLegalSupport"
                       className="option-mobile-btn"
                       onClick={toggleMenu}
                     >
