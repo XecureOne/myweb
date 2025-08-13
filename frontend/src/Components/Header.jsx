@@ -113,7 +113,7 @@ const Header = () => {
                             {selected === 1 && (
                               <div className="three-options">
                                 <Link
-                                  to="/CyberLegelSupport"
+                                  to="/CyberLegalSupport"
                                   className="option-btn"
                                 >
                                   <p>Cyberlegal Support</p>
