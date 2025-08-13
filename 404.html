@@ -4,14 +4,11 @@
     <meta charset="utf-8">
     <title>Page Not Found</title>
     <script>
-      // Save the current path to prevent losing it after the redirect
-      sessionStorage.setItem('redirectPath', location.pathname);
-
-      // Get the base path from the URL
-      const basePath = location.origin + '/';
-
-      // Redirect the browser to the root of your application
-      location.replace(basePath);
+      // Get the path from the URL
+      var path = window.location.pathname;
+      
+      // Redirect to the homepage with the path as a query parameter
+      window.location.replace(window.location.origin + window.location.search + '?p=' + encodeURIComponent(path));
     </script>
   </head>
   <body>
