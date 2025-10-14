@@ -191,7 +191,7 @@ function Footer() {
               </div>
               <div className="get-in-touch">
                 <p>
-                  Have anything on mind to discuss? We are here to help you!
+                  Have anything on mind to discuss? We are these to help you!
                 </p>
                 <div
                   className="get-intouch-button"

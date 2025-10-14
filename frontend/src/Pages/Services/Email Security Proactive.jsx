@@ -180,7 +180,7 @@ function EmailSecurityProactive() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content">
               <button className="service-title-tag about-title-tag">
                 About Email Service
               </button>

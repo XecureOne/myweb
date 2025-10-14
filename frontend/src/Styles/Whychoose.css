@@ -1,3 +1,28 @@
+body.light-theme .why-choose-us {
+   background: linear-gradient(270deg, rgba(142, 101, 207, 0.4), rgb(171, 217, 217,0.8));
+  color: rgb(22, 22, 22);
+}
+body.light-theme .why-choose-us .whychoose-content .sub-heading {
+  font-weight: 400;
+  color: #0b0b0b;
+}
+
+body.light-theme .whychoose-content .para-content {
+   color: rgb(22, 22, 22);
+  font-weight: 300;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .why-choose-us {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);

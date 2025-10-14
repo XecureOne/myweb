@@ -116,7 +116,7 @@ function GetSecured() {
               — fast, reliable, and trusted
             </p>
             <button className="bookconsult-button" onClick={openPopUp}>
-              Book a Consultation
+              Book a Consultaion
             </button>
           </div>
         </div>

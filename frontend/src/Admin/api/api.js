@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://myweb-cwar.onrender.com/api",
+  baseURL: import.meta.env.VITE_SERVER_URI,
 });
+console.log("BASE URL:", import.meta.env.VITE_SERVER_URI);
 
 export default API;

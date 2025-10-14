@@ -185,7 +185,7 @@ function ThreatIntelligence() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content">
               <button className="service-title-tag about-title-tag">
                 About Threat Intelligence
               </button>

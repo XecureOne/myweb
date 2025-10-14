@@ -348,7 +348,7 @@ function NextGenFirewall() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content">
               <button className="service-title-tag about-title-tag">
                 About Next-Gen Firewall
               </button>
@@ -498,7 +498,7 @@ function NextGenFirewall() {
         <div className="sp-fifth-section">
           <div className="five-step-section">
             <div className="five-step-title">
-              <p>5-Step Process for Implementing </p>
+              <p>5-Step Process for Impleting </p>
               <h2>  Next-Gen Firewall</h2>
             </div>
             <div className="five-step-container">

@@ -103,7 +103,7 @@ function ContactPageFinal() {
               </div>
             </div>
 
-            <div>
+            <div className="content">
               <button className="about-title-tag">Contact Us</button>
               <h1>
                 Let`s Secure<br></br>

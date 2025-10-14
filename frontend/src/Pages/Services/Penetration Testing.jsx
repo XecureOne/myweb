@@ -195,7 +195,7 @@ const benefits = [
 
 const needs = [
   {
-    title: "Increasing Sophistication of Cyber Threats",
+    title: ". Increasing Sophistication of Cyber Threats",
     description: `Modern attackers use advanced techniques to bypass traditional defenses. Pen 
 testing mimics these tactics to expose gaps. `,
   },
@@ -344,9 +344,9 @@ function PenetrationTesting() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content">
               <button className="service-title-tag about-title-tag">
-                About VAPT Service
+                About EndPoint Service
               </button>
               <h1>
                 Vulnerability Assessment and Penetration Testing

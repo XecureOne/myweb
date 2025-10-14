@@ -19,6 +19,13 @@ body {
   margin: 0;
   padding: 0;
 }
+/* body {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+} */
+
 .background {
   overflow: hidden;
 }
@@ -59,20 +66,16 @@ html {
   --font-size-base: 16px;
   --font-size-lg: 1.2rem; */
 }
-/* .background
-{
-   z-index: -999;
-   opacity: 0.71;
-} */
-
-/* .content-of-home
-{
-    position: absolute;
-    top: 0;
-    left:0;
-} */
 
 /* title tag of purple  color */
+
+body.light-theme .title-tag
+{
+  color: rgb(11, 11, 11);
+  background-color: #cfa2f749;
+
+}
+
 .title-tag {
   padding: 11px 50px;
   padding-left: 30px;
@@ -126,13 +129,6 @@ html {
     rgba(255, 255, 255, 0)
   );
 }
-
-/* Card---animation---using blur-circle */
-/* 
- .card {
-  position: absolute;
-} */
-
 .blur-circle {
   position: absolute;
   width: 150px;
@@ -140,7 +136,6 @@ html {
   border-radius: 50%;
   filter: blur(50px);
 }
-
 .circle1 {
   top: -70px;
   left: -60px;

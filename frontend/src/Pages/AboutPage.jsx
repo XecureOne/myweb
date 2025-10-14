@@ -93,7 +93,7 @@ function AboutPage() {
               </div>
             </div>
 
-            <div>
+            <div className="content">
               <button className="about-title-tag">About XecureOne</button>
               <h1>
                 XecureOne <br></br>
@@ -112,7 +112,7 @@ function AboutPage() {
                 className="let-connect-btn"
                 onClick={() => navigate("/contact")}
               >
-                Let's Connect
+                Let`s Connect
               </div>
               <div
                 className="our-service-btn"

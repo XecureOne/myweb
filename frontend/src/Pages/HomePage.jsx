@@ -69,7 +69,7 @@ const testimonials = [
 ];
 const stepsData = [
   {
-    title: "INSIGHTFULL CONSULTATION",
+    title: "INSIGHTFUL CONSULTATION",
     description: `We start by gaining a deep understanding of your business objectives, 
 unique cybersecurity challenges, and current security posture. This 
 collaborative session lays the foundation for a customized protection plan. `,
@@ -116,17 +116,10 @@ function HomePage() {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const navigate = useNavigate();
 
-  // const scrollToSection = (sectionId) => {
-  //   navigate(location.pathname, {
-  //     state: { scrollTo: sectionId },
-  //   });
-  // };
-
-    const scrollToSection = (sectionId) => {
-    const sectionElement = document.getElementById(sectionId);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollToSection = (sectionId) => {
+    navigate(location.pathname, {
+      state: { scrollTo: sectionId },
+    });
   };
 
   const toggleStep = (index) => {
@@ -149,7 +142,7 @@ function HomePage() {
         scrollTrigger: {
           trigger: container,
           start: "top top",
-          end: () => `${scrollEl.scrollWidth}`, // or containerRef.current.offsetHeight
+          end: () => `${scrollEl.scrollWidth}`, 
 
           scrub: true,
           pin: true,
@@ -204,7 +197,7 @@ function HomePage() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content">
               <h1>
                 Secure Your Business, <br></br>
                 <span>SafeGuard What Matters Most.</span>
@@ -979,7 +972,7 @@ function HomePage() {
 
           <div className="hp-sixth-section our-partner">
             <div className="title-tag blue-tag partner-tag">
-              <p>Our Partner</p>
+              <p>Our Partner.</p>
             </div>
             <div className="partner-box-container">
               <div className="partner-box-all scroll-animation">

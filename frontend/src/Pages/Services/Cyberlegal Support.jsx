@@ -77,7 +77,7 @@ const needs = [
 
 const steps = [
   {
-    title: "Legal Risk Assessment ",
+    title: "egal Risk Assessment ",
     description: `– Evaluate exposure to cyber regulations and contractual 
 liabilities.`,
   },
@@ -175,7 +175,7 @@ function CyberlegalSupport() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content ">
               <button className="service-title-tag about-title-tag">
                 About Cyber Legal Support
               </button>

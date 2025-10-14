@@ -1,3 +1,93 @@
+
+
+body.light-theme  .ap-first-section .about-title-tag {
+  color: rgb(23, 23, 23);
+  background: rgb(207, 162, 247,0.4);
+
+
+}
+body.light-theme .ap-first-section h1 span {
+  color: #121212;
+}
+body.light-theme .ap-first-section p {
+  color: #0b0b0b;
+}
+body.light-theme  .ap-first-section .btn .our-service-btn {
+  color: white;
+  background: rgb(23, 23, 23);
+}
+body.light-theme .whoweare {
+   background: rgba(150, 150, 238, 0.1);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.light-theme .whoweare-card {
+  opacity: 1;
+}
+body.light-theme .ap-second-section p {
+  font-weight: 300;
+  font-size: 16px;
+
+  color: #0f0f0f;
+}
+body.light-theme .custom-box {
+   background: linear-gradient(
+    270deg,
+    rgba(171, 217, 217, 0.3),
+    white,
+    transparent
+  );
+}
+
+body.light-theme .custom-box p {
+  color: #121212;
+}
+body.light-theme .ap-fourth-section .core-box-content h3 {
+  color: #131313;
+}
+body.light-theme .ap-fourth-section .core-box-content p {
+  color: #141414;
+}
+body.light-theme .ap-fourth-section .core-values-box .core-box {
+  border: 1px solid rgb(202, 202, 202);
+}
+body.light-theme .ap-fiveth-section {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(150, 150, 238, 0.3) 50%,
+    transparent 100%
+  );
+  color: white;
+}
+body.light-theme  .ap-seventh-section .journey-content h2 {
+  color: #7171d2;
+}
+body.light-theme  .ap-seventh-section .journey-content p {
+  color: #131313;
+}
+body.light-theme .faq-left h1 span {
+  color: #0c0c0c;
+  font-style: italic;
+}
+body.light-theme .faq-left .sub-text {
+  color: #161616;
+}
+
+body.light-theme .ap-eight-section .faqs {
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    rgba(255, 255, 255, 0.71) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0);
+
+}
+body.light-theme .ap-eight-section .faqs .faq-content .f-sub-heading {
+  color: #151515;
+}
+
+
+
 .a-circle-bg-1 {
   position: absolute;
   top: 0px;
@@ -96,10 +186,14 @@
 .ap-first-section {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 0px 8rem;
   width: 100%;
+  height: 100vh;
   position: relative;
-  justify-content: center;
+  gap: 20px;
+  /* justify-content: center; */
   padding-top: 120px;
   padding-bottom: 4.2rem;
   overflow: hidden;
@@ -153,11 +247,19 @@
 .ap-first-section .about-title-tag::after {
   bottom: 0;
 }
+/* .ap-first-section .content 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 .ap-first-section h1 {
-  font-size: 75px;
+  font-size: 85px;
   line-height: 90px;
   margin-top: 20px;
   width: 100%;
+  /* text-align: center; */
 }
 .ap-first-section h1 span {
   color: #f0f0f0;
@@ -168,10 +270,11 @@
   font-size: 20px;
   padding: 20px 0px;
   font-weight: 300;
-  width: 60%;
+  width: 75%;
   letter-spacing: 1px;
   line-height: 32px;
   color: #ffffff;
+  /* text-align: center; */
 }
 .ap-first-section .btn {
   display: flex;
@@ -222,14 +325,13 @@
   border-radius: 20px;
   padding: 8px;
   box-shadow: 5px 5px 100px #9696ee2f;
-
 }
 .whoweare-img-in {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.07);
   background-image: url("../assets/AboutUs.png");
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -273,7 +375,7 @@
   border-radius: 50%;
   background-color: white;
 }
- .whoweare-content .who-title .circle-who img{
+.whoweare-content .who-title .circle-who img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -379,8 +481,12 @@
 
 /* ap-fourth-section core-value-section */
 .ap-fourth-section {
-  margin-top: 150px;
   position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 150px;
 }
 .ap-fourth-section .heading {
   display: flex;
@@ -412,20 +518,19 @@
 .card {
   z-index: -1;
 }
-.ap-fourth-section .core-box-content
-{
-   z-index: 444;
+.ap-fourth-section .core-box-content {
+  z-index: 444;
 }
+
 .ap-fourth-section .core-box-content .circle-core-logo {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: white;
   padding: 18px;
-   z-index: 444;
-
+  z-index: 444;
 }
-.core-box-content .circle-core-logo img{
+.core-box-content .circle-core-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -435,8 +540,7 @@
   font-weight: 600;
   color: #fff;
   margin-top: 20px;
-   z-index: 444;
-
+  z-index: 444;
 }
 .ap-fourth-section .core-box-content p {
   font-size: 20px;
@@ -444,7 +548,7 @@
   line-height: 30px;
   margin-left: 5px;
   color: #fff;
-   z-index: 444;
+  z-index: 444;
 
   margin-top: 10px;
 }
@@ -461,14 +565,14 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .ap-fourth-section .core-values-box .core-box2 {
- background-image: url("../assets/CoreValue1.png");
- background-size: cover;
- background-position: center;
+  background-image: url("../assets/CoreValue1.png");
+  background-size: cover;
+  background-position: center;
 }
 .ap-fourth-section .core-values-box .core-box5 {
- background-image: url("../assets/CoreValue2.png");
- background-size: cover;
- background-position: center;
+  background-image: url("../assets/CoreValue2.png");
+  background-size: cover;
+  background-position: center;
 }
 
 /* ap-fiveth-section our-expert-team-section */
@@ -585,17 +689,14 @@
   padding: 8px;
   box-shadow: 5px 5px 100px #cfa2f73f;
 }
-.ap-seventh-section .journey-photo  .journey-photo-in {
+.ap-seventh-section .journey-photo .journey-photo-in {
   width: 100%;
   height: 100%;
   background-image: url("../assets/OurJourney.png");
   border-radius: 15px;
-  background-position: center -200px;
+  background-position: center -300px;
   background-size: cover;
   background-repeat: no-repeat;
-
-
-
 }
 .ap-seventh-section .journey-content h2 {
   font-size: 60px;
@@ -623,8 +724,12 @@
 .ap-eight-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 150px;
   position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+  box-sizing: border-box;
 }
 
 .ap-eight-section .faq-left {
@@ -761,6 +866,7 @@
     padding-top: 120px;
     padding-bottom: 5rem;
     overflow: hidden;
+    height: auto;
   }
   .whoweare {
     padding: 40px 10px 20px 10px;
@@ -1262,6 +1368,9 @@
     margin: 0px;
     margin-top: 50px;
   }
+  .ap-fourth-section .core-box-content .circle-core-logo {
+    padding: 8px;
+  }
 
   /* ap-fiveth-section our-expert-team-section */
   .ap-fiveth-section {
@@ -1297,6 +1406,9 @@
     letter-spacing: 0.5px;
     margin-top: 20px;
     width: 95%;
+  }
+  .ap-seventh-section .journey-photo .journey-photo-in {
+    background-position: center;
   }
 
   /* eight section */
@@ -1563,6 +1675,7 @@
     justify-content: center;
     margin-top: 80px;
     gap: 60px;
+    
   }
   .faq-left h1 {
     font-size: 35px;

@@ -382,7 +382,7 @@ function EndPointSecurity() {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="content">
               <button className="service-title-tag about-title-tag">
                 About EndPoint Service
               </button>
@@ -505,12 +505,7 @@ function EndPointSecurity() {
                 Determining The Need For Our{" "}
                 <span>Endpoint Management Services</span>
               </h2>
-              {/* <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis maxime reprehenderit provident omnis, voluptatibus
-                quo ut aut, quidem praesentium, voluptatem porro quam labore
-                similique tempora soluta? Incidunt at quas quisquam.
-              </p> */}
+         
             </div>
 
             <div className="emn-grid">

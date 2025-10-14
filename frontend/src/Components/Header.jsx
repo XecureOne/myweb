@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import gsap from "gsap";
 import "../Styles/Header.css";
-import { RxCross2 } from "react-icons/rx";
-import { IoCaretUp } from "react-icons/io5";
+
 import { Link } from "react-router-dom";
 import { GoPlus, GoX } from "react-icons/go";
-import { FaUserLarge } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import logo from "../assets/blacklogo.png";
-import { FaMinus } from "react-icons/fa6";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -20,6 +21,17 @@ const Header = () => {
   };
   const [isScrollingDown, setIsScrollingDown] = useState(false);
   let lastScrollY = useRef(0);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+
+  useEffect(() => {
+    document.body.classList.remove("light-theme", "dark-theme");
+    document.body.classList.add(`${theme}-theme`);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -100,6 +112,49 @@ const Header = () => {
                       onMouseLeave={() => setSelected(null)}
                     >
                       <div className="hover-services-text">
+                        <div className="hover-list-all hover-right">
+                          <div
+                            className={`hover-list ${
+                              selected === 1 ? "active" : ""
+                            }`}
+                            onMouseEnter={() => setSelected(1)}
+                          >
+                            <p className="ser-list-name">
+                              Governance, Risk and Compliance
+                            </p>
+                          </div>
+
+                          <div
+                            className={`hover-list ${
+                              selected === 2 ? "active" : ""
+                            }`}
+                            onMouseEnter={() => setSelected(2)}
+                          >
+                            <p className="ser-list-name">
+                              Threat and Incident Management
+                            </p>
+                          </div>
+
+                          <div
+                            className={`hover-list ${
+                              selected === 3 ? "active" : ""
+                            }`}
+                            onMouseEnter={() => setSelected(3)}
+                          >
+                            <p className="ser-list-name">Managed SOC</p>
+                          </div>
+
+                          <div
+                            className={`hover-list ${
+                              selected === 4 ? "active" : ""
+                            }`}
+                            onMouseEnter={() => setSelected(4)}
+                          >
+                            <p className="ser-list-name">
+                              Security and Assessment
+                            </p>
+                          </div>
+                        </div>
                         <div className="hover-left">
                           {selected === null && (
                             <div className="service-title">
@@ -113,7 +168,7 @@ const Header = () => {
                             {selected === 1 && (
                               <div className="three-options">
                                 <Link
-                                  to="/CyberLegalSupport"
+                                  to="/CyberLegelSupport"
                                   className="option-btn"
                                 >
                                   <p>Cyberlegal Support</p>
@@ -182,49 +237,6 @@ const Header = () => {
                             )}
                           </div>
                         </div>
-                        <div className="hover-list-all hover-right">
-                          <div
-                            className={`hover-list ${
-                              selected === 1 ? "active" : ""
-                            }`}
-                            onMouseEnter={() => setSelected(1)}
-                          >
-                            <p className="ser-list-name">
-                              Governance, Risk and Compliance
-                            </p>
-                          </div>
-
-                          <div
-                            className={`hover-list ${
-                              selected === 2 ? "active" : ""
-                            }`}
-                            onMouseEnter={() => setSelected(2)}
-                          >
-                            <p className="ser-list-name">
-                              Threat and Incident Management
-                            </p>
-                          </div>
-
-                          <div
-                            className={`hover-list ${
-                              selected === 3 ? "active" : ""
-                            }`}
-                            onMouseEnter={() => setSelected(3)}
-                          >
-                            <p className="ser-list-name">Managed SOC</p>
-                          </div>
-
-                          <div
-                            className={`hover-list ${
-                              selected === 4 ? "active" : ""
-                            }`}
-                            onMouseEnter={() => setSelected(4)}
-                          >
-                            <p className="ser-list-name">
-                              Security and Assessment
-                            </p>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -235,11 +247,20 @@ const Header = () => {
                   </Link>
                 </div>
               </nav>
-              <div
-                className="header-button"
-                onClick={() => navigate("/contact")}
-              >
-                <p className="btn-p">Get In Touch</p>
+              <div className="last-header">
+                <div
+                  className="header-button"
+                  onClick={() => navigate("/contact")}
+                >
+                  <p className="btn-p">Get In Touch</p>
+                </div>
+                <button className="theme-toggle-btn" onClick={toggleTheme}>
+                  {theme === "light" ? (
+                    <MdDarkMode className="mode-icon darkmode" />
+                  ) : (
+                    <MdLightMode className="mode-icon lightmode" />
+                  )}
+                </button>
               </div>
             </div>
           </div>
@@ -265,7 +286,7 @@ const Header = () => {
                 style={{ textDecoration: "none" }}
                 onClick={toggleMenu}
               >
-                <p style={{ color: "white" }}>About</p>
+                <p >About</p>
               </Link>
             </div>
 
@@ -296,7 +317,7 @@ const Header = () => {
                     className={`dropdown-content ${open === 1 ? "show" : ""}`}
                   >
                     <Link
-                      to="/CyberLegalSupport"
+                      to="/CyberLegelSupport"
                       className="option-mobile-btn"
                       onClick={toggleMenu}
                     >
@@ -403,10 +424,32 @@ const Header = () => {
                 style={{ textDecoration: "none" }}
                 onClick={toggleMenu}
               >
-                <p style={{ color: "white" }}>Contact</p>
+                <p>Contact</p>
               </Link>
             </div>
-            <div
+            <div className="m-last-header">
+              <div
+                className="m-header-button"
+                
+                onClick={() => {
+                toggleMenu();
+                navigate("/contact");
+              }}
+              >
+                <p className="btn-p">Get In Touch</p>
+              </div>
+              <button className="theme-toggle-btn"  onClick={() => {
+                toggleMenu();
+                toggleTheme();
+              }}>
+                {theme === "light" ? (
+                  <MdDarkMode className="mode-icon darkmode" />
+                ) : (
+                  <MdLightMode className="mode-icon lightmode" />
+                )}
+              </button>
+            </div>
+            {/* <div
               className="get-in-touch"
               onClick={() => {
                 toggleMenu();
@@ -414,7 +457,7 @@ const Header = () => {
               }}
             >
               <p>Get In Touch</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

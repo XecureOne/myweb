@@ -1,3 +1,39 @@
+body.light-theme .contact-form {
+  background: rgba(255, 255, 255, 1);
+}
+body.light-theme .contact-form label p {
+  color: rgb(12, 12, 12);
+}
+
+body.light-theme  .contact-form input,
+body.light-theme  .contact-form textarea {
+  background: rgba(221, 221, 221, 0.5);
+  border: 1px solid rgba(153, 153, 153, 0.5);
+
+}
+body.light-theme .contact-form button {
+  background: #0e0e0e;
+  color: #fafafa;
+}
+body.light-theme ::placeholder {
+  color: rgb(105, 105, 105);
+}
+body.light-theme  .c-circle-bg-3 {
+  background: #cfa2f7;
+  opacity: 0.5;
+}
+body.light-theme  .c-circle-bg-4 {
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
 .contactpage-overall-container {
   width: 100%;
 }
@@ -27,7 +63,6 @@
 .cp-first-section {
   display: flex;
   flex-direction: column;
-  /* gap: 50px; */
   padding: 0px 8rem;
   width: 100%;
   position: relative;
@@ -44,8 +79,12 @@
   padding: 0px 8rem;
 }
 .cp-second-section {
-  margin-top: 120px;
   position: relative;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+  box-sizing: border-box;
 }
 .cp-second-section .heading {
   display: flex;
@@ -125,7 +164,6 @@
 .contact-form textarea {
   background: rgba(221, 221, 221, 0.2);
   border: 1px solid rgba(153, 153, 153, 0.3);
-  /* border: none; */
   border-radius: 10px;
   padding: 13px 15px;
   color: #e2e2e2;
@@ -262,6 +300,7 @@
     padding-top: 120px;
     padding-bottom: 5.5rem;
     overflow: hidden;
+    height: auto;
   }
   .cp-second-section .form-content {
     display: flex;
